@@ -29,6 +29,17 @@ function AdditionalInfo() {
             <li>Playing Videogames</li>
           </ul>
         </div>
+        {/* Added Kaggle Card */}
+        <div className="project-card">
+          <h3 className="project-title">Kaggle Works</h3>
+          <ul className="project-details">
+            <li>
+              <a href="https://www.kaggle.com/ndeekshith" target="_blank" rel="noopener noreferrer">
+                View Data Science Works
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );
