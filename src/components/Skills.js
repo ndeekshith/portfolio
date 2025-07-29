@@ -7,8 +7,6 @@ import {
     FaGitAlt, 
     FaJsSquare, 
     FaBrain,
-    FaReact,
-    FaNodeJs,
     FaDocker,
     FaLinux
 } from 'react-icons/fa';
@@ -50,9 +48,6 @@ function Skills() {
                     <span className="skill-tag"><FaHtml5 /> HTML</span>
                     <span className="skill-tag"><FaCss3Alt /> CSS</span>
                     <span className="skill-tag"><FaJsSquare /> JavaScript</span>
-                    <span className="skill-tag"><FaReact /> React.js</span>
-                    <span className="skill-tag"><FaNodeJs /> Node.js</span>
-                    <span className="skill-tag"><SiNextdotjs /> Next.js</span>
                 </div>
             </div>
             
