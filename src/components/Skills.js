@@ -16,7 +16,6 @@ import {
     SiPandas, 
     SiNumpy, 
     SiFlask, 
-    SiNextdotjs,
     SiTensorflow,
     SiPytorch,
     SiScikitlearn,
