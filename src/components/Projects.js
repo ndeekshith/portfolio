@@ -46,7 +46,7 @@ const projectData = [
             "Features secure transactions including deposits, withdrawals, and inter-account transfers.",
             "Utilizes SQLite for persistent data storage, complete with an initialization schema."
         ],
-        repoLink: "https://github.com/your-username/banking-System"
+        repoLink: "https://github.com/ndeekshith/Banking-System"
     },
   
    
