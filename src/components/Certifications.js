@@ -8,15 +8,15 @@ function Certifications() {
       <div className="certification-badges">
         <div className="badge">
           <i className="fab fa-napster"></i>
-          NPTEL Programming in Python
+          NPTEL Deep Learning
         </div>
         <div className="badge">
           <i className="fas fa-database"></i>
-          Coursera DBMS with SQL
+          Coursera Data Science
         </div>
         <div className="badge">
           <i className="fas fa-brain"></i>
-          Introduction to Deep Learning
+          Coursera DBMS with SQL
         </div>
       </div>
     </section>

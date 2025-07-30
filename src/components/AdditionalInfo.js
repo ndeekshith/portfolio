@@ -24,8 +24,8 @@ function AdditionalInfo() {
         <div className="project-card">
           <h3 className="project-title">Hobbies</h3>
           <ul className="project-details">
-            <li>Reading Novels</li>
-            <li>Coding Challenges</li>
+            <li>Working with data</li>
+            <li>Watching web series</li>
             <li>Playing Videogames</li>
           </ul>
         </div>
