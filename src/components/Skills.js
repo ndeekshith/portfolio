@@ -77,7 +77,6 @@ function Skills() {
             <div className="skill-category">
                 <h3>Tools & Frameworks</h3>
                 <div className="skills-container">
-                    <span className="skill-tag">Tkinter</span>
                     <span className="skill-tag"><SiFlask /> Flask</span>
                     <span className="skill-tag"><FaDocker /> Docker</span>
                     <span className="skill-tag"><FaLinux /> Linux</span>

@@ -14,11 +14,13 @@ const projectData = [
         imageSrc: sdgsImage,
         imageAlt: "SDG Classification System",
         title: "SDG Classification System",
-        details: [
-            "Developed a multi-label machine learning classification system to categorize startups based on UN Sustainable Development Goals (SDGs).",
-            "Web scraped 5,514 startup descriptions using Python for dataset creation.",
-            "Engineered a cascading pipeline utilizing Linear SVC and DistilBERT, achieving a 92% classification accuracy."
-        ],
+       details: [
+    "Developed a multi-label machine learning classification system to categorize startups based on UN Sustainable Development Goals (SDGs).",
+    "Scraped 500+ Indian startup websites and 5,514 startup descriptions using Python to curate a structured dataset for SDG classification.",
+    "Engineered a hybrid NLP pipeline combining TF-IDF, LinearSVC, and DistilBERT, improving Jaccard score by 7% and achieving 92% classification accuracy.",
+    "Visualized SDG trends and co-occurrence patterns to identify investment-ready impact startups.",
+    "Implemented cascading classification architecture to handle overlapping SDG categories efficiently."
+],
         repoLink: "https://github.com/ndeekshith/AboutPageCrawler"
     },
       {
@@ -69,10 +71,14 @@ const projectData = [
         imageAlt: "Weather Prediction System",
         title: "Weather Prediction System",
         details: [
-            "Built multiple ML models (Logistic Regression, KNN, Decision Tree, SVM) for weather prediction.",
-            "Performed advanced data preprocessing and feature engineering.",
-            "Achieved high accuracy using metrics like F1-score and log loss."
-        ],
+    "Built multiple ML models (Logistic Regression, KNN, Decision Tree, SVM) for weather prediction.",
+    "Performed advanced data preprocessing, including handling missing values, outlier detection, and normalization.",
+    "Engineered domain-specific features such as humidity index, temperature gradients, and pressure variations to improve model performance.",
+    "Evaluated models using metrics like F1-score, log loss and cross-validation for robust performance assessment.",
+    "Visualized weather trends, correlations, and prediction outputs using Matplotlib and Seaborn to enhance interpretability."
+    
+]
+,
         repoLink: "https://github.com/ndeekshith/weather_pred_models"
     },
       {
