@@ -33,7 +33,7 @@ const projectData = [
             "Enabled users to upload PDFs and receive precise answers based on document content using LangChain.",
             "Utilized Python (Flask) for backend development, integrating FAISS for efficient vector similarity search.",
             "Integrated OpenAI's Large Language Models (LLMs) for generating accurate and concise answers.",
-            "Built a user-friendly frontend with React.js for intuitive PDF uploads and chat interactions."
+            "Built a user-friendly frontend with Streamlit for intuitive PDF uploads and chat interactions."
         ],
         repoLink: "https://github.com/ndeekshith/DocuQuery"
     },
