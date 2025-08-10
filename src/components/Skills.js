@@ -8,6 +8,7 @@ import {
     FaJsSquare, 
     FaBrain,
     FaDocker,
+    FaRProject,
     FaLinux
 } from 'react-icons/fa';
 import { 
@@ -37,7 +38,7 @@ function Skills() {
                 <div className="skills-container">
                     <span className="skill-tag"><FaPython /> Python</span>
                     <span className="skill-tag"><FaJava /> Java</span>
-                    <span className="skill-tag">R</span>
+                    <span className="skill-tag"><FaRProject/></span>
                 </div>
             </div>
             
