@@ -7,7 +7,7 @@ import docuqueryImage from '../assets/projects/docuquery.png';
 import sdgsImage from '../assets/projects/sdgs.png';
 import ytImage from '../assets/projects/yt.png';
 import bankingGif from '../assets/projects/demo.gif'; // Add this import
-
+import dashboradImage from '../assets/projects/dashboard.png';
 const projectData = [
      {
         id: 1,
@@ -83,7 +83,7 @@ const projectData = [
     },
       {
         id: 6,
-        imageSrc: null, // No image for this project
+        imageSrc: null, 
         imageAlt: "Spotify Listening Analysis",
         title: "Spotify Data Analysis & BERT Recommendations",
         details: [
@@ -95,6 +95,37 @@ const projectData = [
         ],
         repoLink: "https://github.com/ndeekshith/SongRecommondation",
         demoLink: null
+    },
+     {
+    id: 7,
+    imageSrc: null, 
+    imageAlt: "AI-Powered DevOps Auto-Remediator",
+    title: "AI-Powered DevOps Auto-Remediator",
+    details: [
+        "Developed an event-driven remediation agent that ingests infrastructure alerts, triages with Google Gemini LLM, and executes automated fixes via LangGraph orchestration.",
+        "Implemented a state-based architecture with a shared TypedDict to manage alert classification, remediation actions, rollback steps, and confidence scoring.",
+        "Integrated Slack and PagerDuty for real-time incident notifications, escalation, and human-in-the-loop workflows.",
+        "Designed a MongoDB-backed playbook store with automatic fallback to in-memory defaults, ensuring high availability and resilience.",
+        "Added pluggable remediation tools (service restarts, pod scaling, log cleanup) with rollback support for safe operations.",
+        "Built a Dockerized deployment pipeline supporting local demos, alert file ingestion, and secure environment variable management."
+        
+    ],
+    repoLink: "https://github.com/ndeekshith/AI-Powered-DevOps-Auto-Remediator"
+}
+,
+    {
+        id: 8,
+        imageSrc: dashboradImage,
+        imageAlt: "Super Stores Sales Dashboard",
+        title: "Super Stores Sales Dashboard",
+        details: [
+            "Designed an interactive sales dashboard to analyze KPIs including Sales, Quantity, and Profit across multiple regions.",
+            "Implemented dynamic filters (Region, Segment, Payment Mode) for drill-down analysis and actionable insights.",
+            "Visualized YoY sales and profit trends, identifying seasonal spikes and region-wise performance variations.",
+            "Built interactive charts (donut, line, bar) to track category- and subcategory-level contributions, aiding business strategy."
+        ],
+        repoLink: "https://github.com/ndeekshith/Sales-Analysis", 
+        demoLink: "https://app.powerbi.com/groups/4805ccb2-c417-4f5c-bedd-6713d8f64ca9/reports/e37b9819-fa59-4aca-ba30-dfeffdaa105b/3180d249b1aaca65eed1?experience=power-bi" 
     }
 ];
 
