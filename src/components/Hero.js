@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import resumePdf from '../assets/DeekshithResume..pdf';
+import resumePdf from '../assets/Resume.pdf';
 
 function Hero() {
     const containerVariants = {
