@@ -24,19 +24,22 @@ const projectData = [
         repoLink: "https://github.com/ndeekshith/AboutPageCrawler"
     },
       {
-        id: 2,
-        imageSrc: docuqueryImage,
-        imageAlt: "DocuQuery Project",
-        title: "DocuQuery: AI-Powered Document Q&A",
-        details: [
-            "Developed an AI-powered web application for intelligent document analysis and question-answering.",
-            "Enabled users to upload PDFs and receive precise answers based on document content using LangChain.",
-            "Utilized Python (Flask) for backend development, integrating FAISS for efficient vector similarity search.",
-            "Integrated OpenAI's Large Language Models (LLMs) for generating accurate and concise answers.",
-            "Built a user-friendly frontend with Streamlit for intuitive PDF uploads and chat interactions."
-        ],
-        repoLink: "https://github.com/ndeekshith/DocuQuery"
-    },
+  id: 2,
+  imageSrc: docuqueryImage,
+  imageAlt: "DocuQuery - Advanced Document Q&A System",
+  title: "DocuQuery: Privacy-First AI Document Intelligence",
+  details: [
+    "Built a production-ready RAG (Retrieval Augmented Generation) system enabling intelligent document Q&A with complete privacy—all processing runs locally without cloud dependencies.",
+    "Architected hybrid search combining FAISS semantic search with BM25 keyword matching, enhanced by cross-encoder reranking for 20-30% improved precision over standard retrieval.",
+    "Implemented multi-format document ingestion (PDF, DOCX, CSV, HTML, RTF) with intelligent chunking and async processing using LangChain, reducing batch processing time by 60%.",
+    "Integrated local LLM inference via Ollama (Phi-3, Llama3, Mistral) with streaming responses, enabling real-time answer generation grounded in retrieved context to minimize hallucinations.",
+    "Engineered scalable vector storage using FAISS with IVF indexing support for 100K+ documents, achieving sub-second query response times with 384-dim sentence-transformer embeddings.",
+    "Developed modern Streamlit UI with dark/light themes, real-time statistics dashboard, and document management—deployed via Docker Compose with SQLite metadata persistence."
+  ],
+  
+  
+  repoLink: "https://github.com/ndeekshith/DocuQuery"
+},
     {
         id: 3,
         imageSrc: bankingGif, // Update this line to use the GIF

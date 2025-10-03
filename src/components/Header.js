@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import profilePic from '../assets/Portfolio pic.jpg';
+import profilePic from '../assets/Portfolio pic.JPG';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 function Header() {
