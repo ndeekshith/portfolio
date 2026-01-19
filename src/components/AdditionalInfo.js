@@ -34,7 +34,7 @@ function AdditionalInfo() {
           <h3 className="project-title">Kaggle Work</h3>
           <ul className="project-details">
             <li>
-              <a href="https://www.kaggle.com/ndeekshith" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.kaggle.com/ndeekshith/code" target="_blank" rel="noopener noreferrer">
                 View Data Science Work
               </a>
             </li>
