@@ -1,148 +1,67 @@
-import React, { useState, useEffect } from 'react';
-import './NeuralCursor.css';
+import React, { useEffect, useState } from "react";
+import "./NeuralCursor.css";
 
-const NeuronSVG = ({ isHovered, isClicked }) => ( // NEW: Added isClicked prop
-  // NEW: Added is-clicked class dynamically
-  <svg
-    className={`neuron-svg-cursor ${isHovered ? 'hovered' : ''} ${isClicked ? 'is-clicked' : ''}`}
-    viewBox="0 0 60 60"
-    width="30"
-    height="30"
-  >
-    {/* Define a gradient for the cell body to give it depth */}
-    <defs>
-      <radialGradient id="neuronGradient">
-        <stop offset="0%" stopColor="rgba(0, 123, 255, 0.5)" />
-        <stop offset="100%" stopColor="rgba(0, 123, 255, 0.8)" />
-      </radialGradient>
-    </defs>
+const NeuronCursorSVG = ({ hovered, clicked }) => {
+  return (
+    <svg
+      className={`neuron-svg ${hovered ? "hovered" : ""} ${clicked ? "clicked" : ""
+        }`}
+      viewBox="0 0 40 40"
+    >
+      {/* Soma */}
+      <circle cx="20" cy="20" r="4" className="soma" />
 
-    {/* NEW: Added a circle for the click shockwave effect */}
-    <circle className="neuron-click-shockwave" cx="30" cy="30" r="10" />
+      {/* Dendrites */}
+      <line x1="20" y1="2" x2="20" y2="12" className="dendrite" />
+      <line x1="20" y1="28" x2="20" y2="38" className="dendrite" />
+      <line x1="2" y1="20" x2="12" y2="20" className="dendrite" />
+      <line x1="28" y1="20" x2="38" y2="20" className="dendrite" />
 
-    {/* The outer ring that reacts on hover */}
-    <circle className="neuron-outline" cx="30" cy="30" r="25" />
-
-    {/* Group for the dendrites so we can animate them together */}
-    <g className="dendrites-group">
-      <path className="dendrite" d="M30,5 Q25,0 20,5" />
-      <path className="dendrite" d="M55,30 Q60,25 55,20" />
-      <path className="dendrite" d="M10,50 Q0,45 5,40" />
-      <path className="dendrite" d="M50,55 Q55,60 45,55" />
-      <path className="dendrite" d="M8,15 Q0,20 10,25" />
-    </g>
-
-    {/* The main cell body (Soma) */}
-    <circle
-      className="neuron-soma"
-      cx="30"
-      cy="30"
-      r="12"
-      fill="url(#neuronGradient)"
-    />
-
-    {/* The nucleus of the neuron */}
-    <circle className="neuron-nucleus" cx="30" cy="30" r="4" />
-  </svg>
-);
+      {/* Click pulse */}
+      <circle cx="20" cy="20" r="6" className="pulse" />
+    </svg>
+  );
+};
 
 const NeuralCursor = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [hoveredElement, setHoveredElement] = useState(null);
-  const [lines, setLines] = useState([]);
-  const [isClicked, setIsClicked] = useState(false); // NEW: State for click effect
-
-  const isHovering = !!hoveredElement;
+  const [pos, setPos] = useState({ x: 0, y: 0 });
+  const [hovered, setHovered] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
   useEffect(() => {
-    // Mouse Move Listener
-    const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
+    const move = (e) => {
+      setPos({ x: e.clientX, y: e.clientY });
+
       const target = e.target.closest(
-        'a, button, input, textarea, [role="button"], .clickable'
+        "a, button, input, textarea, [role='button'], .clickable"
       );
-      setHoveredElement(target);
+      setHovered(!!target);
     };
 
-    // NEW: Mouse Click Listeners
-    const handleMouseDown = () => {
-      setIsClicked(true);
-    };
+    const down = () => setClicked(true);
+    const up = () => setClicked(false);
 
-    const handleMouseUp = () => {
-      setIsClicked(false);
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mousedown', handleMouseDown); // NEW
-    window.addEventListener('mouseup', handleMouseUp);     // NEW
+    window.addEventListener("mousemove", move);
+    window.addEventListener("mousedown", down);
+    window.addEventListener("mouseup", up);
 
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mousedown', handleMouseDown); // NEW
-      window.removeEventListener('mouseup', handleMouseUp);     // NEW
+      window.removeEventListener("mousemove", move);
+      window.removeEventListener("mousedown", down);
+      window.removeEventListener("mouseup", up);
     };
   }, []);
 
-  useEffect(() => {
-    if (hoveredElement) {
-      const rect = hoveredElement.getBoundingClientRect();
-      const connectionPoints = [
-        { x: rect.left, y: rect.top },
-        { x: rect.right, y: rect.top },
-        { x: rect.right, y: rect.bottom },
-        { x: rect.left, y: rect.bottom },
-      ];
-      const newLines = connectionPoints.map(point => {
-        const dx = point.x - position.x;
-        const dy = point.y - position.y;
-        const length = Math.sqrt(dx * dx + dy * dy);
-        return {
-          x1: position.x,
-          y1: position.y,
-          x2: point.x,
-          y2: point.y,
-          length: length,
-        };
-      });
-      setLines(newLines);
-    } else {
-      setLines([]);
-    }
-  }, [hoveredElement, position]);
-
   return (
-    <>
-      {/* SVG for drawing the synaptic lines */}
-      <svg className={`neural-lines-svg ${isHovering ? 'active' : ''}`}>
-        {lines.map((line, index) => (
-          <line
-            key={index}
-            className="synapse-line"
-            x1={line.x1}
-            y1={line.y1}
-            x2={line.x2}
-            y2={line.y2}
-            style={{
-              strokeDasharray: line.length,
-              strokeDashoffset: line.length,
-            }}
-          />
-        ))}
-      </svg>
-
-      {/* The new SVG-based neuron cursor */}
-      <div
-        className="neuron-cursor-container"
-        style={{
-          left: `${position.x}px`,
-          top: `${position.y}px`,
-        }}
-      >
-        {/* NEW: Pass isClicked prop down */}
-        <NeuronSVG isHovered={isHovering} isClicked={isClicked} />
-      </div>
-    </>
+    <div
+      className="neuron-cursor"
+      style={{
+        left: pos.x,
+        top: pos.y,
+      }}
+    >
+      <NeuronCursorSVG hovered={hovered} clicked={clicked} />
+    </div>
   );
 };
 

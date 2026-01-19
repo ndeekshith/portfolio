@@ -9,9 +9,9 @@ import Certifications from './components/Certifications';
 import AdditionalInfo from './components/AdditionalInfo';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import NeuralCursor from './components/NeuralCursor'; 
+import NeuralCursor from './components/NeuralCursor';
 // --- NEW: Import the background component ---
-import AnimatedBackground from './components/AnimatedBackground'; 
+import AnimatedBackground from './components/AnimatedBackground';
 
 function App() {
   return (

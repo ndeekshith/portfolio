@@ -21,7 +21,7 @@ function Footer() {
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
-        <p>By Deekshith N | © 2024 All Rights are Reserved</p>
+        <p>By Deekshith N | © 2026  Nothing is Reserved</p>
       </div>
     </footer>
   );

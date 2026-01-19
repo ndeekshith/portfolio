@@ -1,29 +1,30 @@
 import React from 'react';
-import { 
-    FaPython, 
-    FaJava, 
-    FaHtml5, 
-    FaCss3Alt, 
-    FaGitAlt, 
-    FaJsSquare, 
+import {
+    FaPython,
+    FaJava,
+    FaHtml5,
+    FaCss3Alt,
+    FaGitAlt,
+    FaJsSquare,
     FaBrain,
     FaDocker,
     FaRProject,
     FaLinux
 } from 'react-icons/fa';
-import { 
-    SiMongodb, 
-    SiMysql, 
-    SiPandas, 
-    SiNumpy, 
-    SiFlask, 
+import {
+    SiMongodb,
+    SiMysql,
+    SiPandas,
+    SiNumpy,
     SiTensorflow,
     SiPytorch,
     SiScikitlearn,
     SiOpencv,
     SiKeras,
     SiPostgresql,
-      SiAmazonwebservices
+    SiAmazonwebservices,
+    SiSpringboot,
+    SiSpring
 } from 'react-icons/si';
 
 function Skills() {
@@ -32,16 +33,16 @@ function Skills() {
             <h2 className="section-heading">
                 <span className="gradient-text">Technical Arsenal</span>
             </h2>
-            
+
             <div className="skill-category">
                 <h3>Programming Languages</h3>
                 <div className="skills-container">
-                    <span className="skill-tag"><FaPython /> Python</span>
                     <span className="skill-tag"><FaJava /> Java</span>
-                    <span className="skill-tag"><FaRProject/></span>
+                    <span className="skill-tag"><FaPython /> Python</span>
+                    <span className="skill-tag"><FaRProject /></span>
                 </div>
             </div>
-            
+
             <div className="skill-category">
                 <h3>Web Technologies</h3>
                 <div className="skills-container">
@@ -50,7 +51,7 @@ function Skills() {
                     <span className="skill-tag"><FaJsSquare /> JavaScript</span>
                 </div>
             </div>
-            
+
             <div className="skill-category">
                 <h3>Database Management</h3>
                 <div className="skills-container">
@@ -59,7 +60,7 @@ function Skills() {
                     <span className="skill-tag"><SiPostgresql /> PostgreSQL</span>
                 </div>
             </div>
-            
+
             <div className="skill-category">
                 <h3>Data Science & Machine Learning</h3>
                 <div className="skills-container">
@@ -74,17 +75,18 @@ function Skills() {
                     <span className="skill-tag">Feature Engineering</span>
                 </div>
             </div>
-            
+
             <div className="skill-category">
                 <h3>Tools & Frameworks</h3>
                 <div className="skills-container">
-                    <span className="skill-tag"><SiFlask /> Flask</span>
+                    <span className="skill-tag"><SiSpringboot /> Spring Boot</span>
+                    <span className="skill-tag"><SiSpring /> Spring</span>
                     <span className="skill-tag"><FaDocker /> Docker</span>
                     <span className="skill-tag"><FaLinux /> Linux</span>
                     <span className="skill-tag"><SiAmazonwebservices /> AWS</span>
                 </div>
             </div>
-            
+
             <div className="skill-category">
                 <h3>AI & Deep Learning</h3>
                 <div className="skills-container">

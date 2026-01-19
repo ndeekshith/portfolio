@@ -3,41 +3,61 @@
 /* --- Variables --- */
 :root {
   /* Black-based color scheme */
-  --primary-bg: #000000; /* Pure black background */
-  --secondary-bg: #111111; /* Very dark gray for secondary elements */
-  --accent-color: #5eead4; /* Maintaining the teal accent color */
-  --text-color: #ffffff; /* Pure white text */
-  --subtext-color: #aaaaaa; /* Light gray for secondary text */
-  --gradient-start: #5eead4; /* Gradient start color */
-  --gradient-end: #2dd4bf; /* Gradient end color */
-  --card-bg: rgba(17, 17, 17, 0.7); /* Semi-transparent card background */
-  
+  --primary-bg: #000000;
+  /* Pure black background */
+  --secondary-bg: #111111;
+  /* Very dark gray for secondary elements */
+  --accent-color: #5eead4;
+  /* Maintaining the teal accent color */
+  --text-color: #ffffff;
+  /* Pure white text */
+  --subtext-color: #aaaaaa;
+  /* Light gray for secondary text */
+  --gradient-start: #5eead4;
+  /* Gradient start color */
+  --gradient-end: #2dd4bf;
+  /* Gradient end color */
+  --card-bg: rgba(17, 17, 17, 0.7);
+  /* Semi-transparent card background */
+
   /* Modern font stack */
   --font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
-  
+
   /* Enhanced shadows */
   --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.3);
   --shadow-accent: 0 8px 16px rgba(94, 234, 212, 0.2);
-  
+
   /* Refined spacing system */
-  --space-3xs: 0.25rem;  /* 4px */
-  --space-2xs: 0.5rem;   /* 8px */
-  --space-xs: 0.75rem;   /* 12px */
-  --space-sm: 1rem;      /* 16px */
-  --space-md: 1.5rem;    /* 24px */
-  --space-lg: 2rem;      /* 32px */
-  --space-xl: 3rem;      /* 48px */
-  --space-2xl: 4rem;     /* 64px */
-  
+  --space-3xs: 0.25rem;
+  /* 4px */
+  --space-2xs: 0.5rem;
+  /* 8px */
+  --space-xs: 0.75rem;
+  /* 12px */
+  --space-sm: 1rem;
+  /* 16px */
+  --space-md: 1.5rem;
+  /* 24px */
+  --space-lg: 2rem;
+  /* 32px */
+  --space-xl: 3rem;
+  /* 48px */
+  --space-2xl: 4rem;
+  /* 64px */
+
   /* Border radius */
-  --radius-sm: 0.25rem;  /* 4px */
-  --radius-md: 0.5rem;   /* 8px */
-  --radius-lg: 1rem;     /* 16px */
-  --radius-pill: 9999px; /* Pill shape */
-  
+  --radius-sm: 0.25rem;
+  /* 4px */
+  --radius-md: 0.5rem;
+  /* 8px */
+  --radius-lg: 1rem;
+  /* 16px */
+  --radius-pill: 9999px;
+  /* Pill shape */
+
   /* Animation */
   --transition-fast: 0.2s;
   --transition-base: 0.3s;
@@ -106,19 +126,32 @@ body {
 /* --- Navigation --- */
 :root {
   /* Define your CSS variables here if they are not global */
-  --space-xs: 0.25rem; /* Example value */
-  --space-md: 1rem;    /* Example value */
-  --space-lg: 1.5rem;  /* Example value */
-  --space-xl: 2rem;    /* Example value */
-  --transition-base: 0.3s; /* Example value */
-  --ease-out: ease-out;  /* Example value */
-  --accent-color: #5EEAD4; /* Example accent color (teal-like) */
-  --subtext-color: #A0A0A0; /* Example subtext color */
-  --text-color: #FFFFFF; /* Example text color */
-  --gradient-start: #5EEAD4; /* Example gradient start */
-  --gradient-end: #3B82F6;   /* Example gradient end (blue) */
-  --radius-sm: 0.25rem; /* Example border radius */
-  --radius-pill: 9999px; /* Example pill radius */
+  --space-xs: 0.25rem;
+  /* Example value */
+  --space-md: 1rem;
+  /* Example value */
+  --space-lg: 1.5rem;
+  /* Example value */
+  --space-xl: 2rem;
+  /* Example value */
+  --transition-base: 0.3s;
+  /* Example value */
+  --ease-out: ease-out;
+  /* Example value */
+  --accent-color: #5EEAD4;
+  /* Example accent color (teal-like) */
+  --subtext-color: #A0A0A0;
+  /* Example subtext color */
+  --text-color: #FFFFFF;
+  /* Example text color */
+  --gradient-start: #5EEAD4;
+  /* Example gradient start */
+  --gradient-end: #3B82F6;
+  /* Example gradient end (blue) */
+  --radius-sm: 0.25rem;
+  /* Example border radius */
+  --radius-pill: 9999px;
+  /* Example pill radius */
 }
 
 /* --- */
@@ -142,10 +175,14 @@ nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* Ensure container takes full width for spacing */
-  max-width: 1200px; /* Example max width for content */
-  margin: 0 auto; /* Center the container */
-  padding: 0 var(--space-md); /* Add horizontal padding to container */
+  width: 100%;
+  /* Ensure container takes full width for spacing */
+  max-width: 1200px;
+  /* Example max width for content */
+  margin: 0 auto;
+  /* Center the container */
+  padding: 0 var(--space-md);
+  /* Add horizontal padding to container */
 }
 
 .logo {
@@ -153,7 +190,7 @@ nav .container {
   font-weight: 700;
   text-decoration: none;
   background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
-  
+
   -webkit-text-fill-color: transparent;
   transition: all var(--transition-base) var(--ease-out);
   position: relative;
@@ -205,13 +242,15 @@ nav .container {
 
 /* --- Mobile Menu Toggle Button --- */
 .menu-toggle {
-  display: none; /* Hidden by default for desktop */
+  display: none;
+  /* Hidden by default for desktop */
   background: none;
   border: none;
   color: var(--accent-color);
   font-size: 2rem;
   cursor: pointer;
-  z-index: 101; /* Ensure it's above the nav and sidebar */
+  z-index: 101;
+  /* Ensure it's above the nav and sidebar */
   padding: var(--space-xs);
 }
 
@@ -230,14 +269,16 @@ nav .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateX(100%); /* Start off-screen to the right */
+  transform: translateX(100%);
+  /* Start off-screen to the right */
   transition: transform var(--transition-base) var(--ease-out);
   padding: var(--space-xl);
 }
 
 /* Show sidebar by sliding it in */
 .sidebar-overlay.show {
-  transform: translateX(0); /* Slide in when 'show' class is present */
+  transform: translateX(0);
+  /* Slide in when 'show' class is present */
 }
 
 /* --- Close Button Inside Sidebar --- */
@@ -247,16 +288,20 @@ nav .container {
   right: var(--space-md);
   background: none;
   border: none;
-  color: var(--accent-color); /* Visible close icon */
-  font-size: 2.5rem; /* Larger for better tap target */
+  color: var(--accent-color);
+  /* Visible close icon */
+  font-size: 2.5rem;
+  /* Larger for better tap target */
   cursor: pointer;
   padding: var(--space-xs);
-  z-index: 102; /* Ensure it's above the sidebar */
+  z-index: 102;
+  /* Ensure it's above the sidebar */
 }
 
 .sidebar-overlay .close-btn:hover,
 .sidebar-overlay .close-btn:focus {
-  color: var(--subtext-color); /* Example hover color */
+  color: var(--subtext-color);
+  /* Example hover color */
   outline: none;
 }
 
@@ -268,25 +313,30 @@ nav .container {
   font-weight: 600;
   margin-bottom: var(--space-lg);
   transition: color var(--transition-base) var(--ease-out);
-  padding: var(--space-xs); /* Added padding for better click area */
-  border-radius: var(--radius-sm); /* Added for focus-visible outline */
+  padding: var(--space-xs);
+  /* Added padding for better click area */
+  border-radius: var(--radius-sm);
+  /* Added for focus-visible outline */
 }
 
 .sidebar-overlay a:hover,
 .sidebar-overlay a:focus-visible {
   color: var(--accent-color);
-  outline: 2px solid var(--accent-color); /* Added outline for accessibility */
+  outline: 2px solid var(--accent-color);
+  /* Added outline for accessibility */
   outline-offset: var(--space-xs);
 }
 
 /* --- Media Queries for Responsiveness --- */
 @media (max-width: 768px) {
   .nav-links.desktop {
-    display: none; /* Hide desktop links on smaller screens */
+    display: none;
+    /* Hide desktop links on smaller screens */
   }
 
   .menu-toggle {
-    display: block; /* Show hamburger menu on smaller screens */
+    display: block;
+    /* Show hamburger menu on smaller screens */
   }
 
   /* Adjust nav padding for smaller screens if needed */
@@ -302,28 +352,28 @@ nav .container {
 
 
 .hero {
-    perspective: 1000px;
+  perspective: 1000px;
 }
 
 [data-cursor-tooltip]:before {
-    content: attr(data-cursor-tooltip);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 4px 8px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    border-radius: 4px;
-    font-size: 14px;
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.2s;
-    pointer-events: none;
+  content: attr(data-cursor-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
 }
 
 [data-cursor-tooltip]:hover:before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .profile-pic {
@@ -387,7 +437,8 @@ nav .container {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* This is the most important part! */
+  z-index: -1;
+  /* This is the most important part! */
 }
 
 .big-heading {
@@ -573,18 +624,25 @@ section {
 }
 
 .project-image {
-    width: 100%; /* Make image fill the card width */
-    height: 200px; /* Set a fixed height for consistency, adjust as needed */
-    object-fit: cover; /* Ensures image covers the area without distortion */
-    border-radius: var(--radius-sm); /* Match card border radius */
-    margin-bottom: var(--space-md); /* Space between image and title */
-    display: block; /* Remove any extra space below image */
-    transition: transform var(--transition-base) var(--ease-out); /* Optional: add hover effect */
+  width: 100%;
+  /* Make image fill the card width */
+  height: 200px;
+  /* Set a fixed height for consistency, adjust as needed */
+  object-fit: cover;
+  /* Ensures image covers the area without distortion */
+  border-radius: var(--radius-sm);
+  /* Match card border radius */
+  margin-bottom: var(--space-md);
+  /* Space between image and title */
+  display: block;
+  /* Remove any extra space below image */
+  transition: transform var(--transition-base) var(--ease-out);
+  /* Optional: add hover effect */
 }
 
 /* Optional: Add a subtle hover effect to make images pop */
 .project-card:hover .project-image {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .project-card {
@@ -886,6 +944,7 @@ footer .container {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -896,9 +955,11 @@ footer .container {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -913,15 +974,15 @@ footer .container {
   .hero {
     min-height: 100vh;
   }
-  
+
   .education-timeline::before {
     left: 24px;
   }
-  
+
   .education-item {
     margin-left: var(--space-2xl);
   }
-  
+
   .education-item::before {
     left: -46px;
     width: 20px;
@@ -933,19 +994,19 @@ footer .container {
   .nav-links {
     gap: var(--space-md);
   }
-  
+
   .big-heading {
     font-size: clamp(2rem, 8vw, 3rem);
   }
-  
+
   .sub-heading {
     font-size: clamp(1.2rem, 5vw, 1.8rem);
   }
-  
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .contact-info {
     grid-template-columns: 1fr;
   }
@@ -987,29 +1048,30 @@ footer .container {
 
 /* --- Navigation --- */
 .nav-container {
-    /* This creates the sticky, full-width bar */
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: rgba(1, 4, 9, 0.85); 
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(94, 234, 212, 0.1);
+  /* This creates the sticky, full-width bar */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(1, 4, 9, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(94, 234, 212, 0.1);
 }
 
 /* This is the container for your nav content */
 .nav-container .container {
-    display: flex;
-    align-items: center;
-    
-    /* --- THIS IS THE KEY CHANGE --- */
-    /* It pushes the first item (logo) to the left and the last item (links) to the right */
-    justify-content: space-between; 
+  display: flex;
+  align-items: center;
 
-    /* These rules center your content and keep it from touching the screen edges */
-    max-width: 1200px;
-    margin: 0 auto; 
-    padding: var(--space-sm) 0; /* Vertical padding for top/bottom */
+  /* --- THIS IS THE KEY CHANGE --- */
+  /* It pushes the first item (logo) to the left and the last item (links) to the right */
+  justify-content: space-between;
+
+  /* These rules center your content and keep it from touching the screen edges */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-sm) 0;
+  /* Vertical padding for top/bottom */
 }
 
 .nav-links {
@@ -1020,13 +1082,13 @@ footer .container {
 
 /* --- Profile Picture Styling --- */
 .profile-pic {
-  width: 50px;             
+  width: 50px;
   height: 50px;
-  border-radius: 50%;       
+  border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--accent-color);
   box-shadow: 0 0 15px rgba(94, 234, 212, 0.3);
-  display: block;          
+  display: block;
 }
 
 /* The rest of your .nav-links a styles remain the same... */
@@ -1068,24 +1130,26 @@ footer .container {
 /* --- Profile Picture Styling --- */
 .profile-pic {
   /* CHANGED: Increased from 50px to 65px for better visibility */
-  width: 85px;             
+  width: 85px;
   height: 85px;
 
   /* These styles keep the modern, circular look */
-  border-radius: 50%;       
+  border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--accent-color);
   box-shadow: 0 0 15px rgba(94, 234, 212, 0.3);
-  display: block;          
+  display: block;
 }
 
 
-/* ========================================= *//* ========================================= */
+/* ========================================= */
+/* ========================================= */
 /* --- MOBILE MENU & RESPONSIVE STYLES --- */
 /* ========================================= */
 
 .menu-toggle {
-  display: none; /* Hidden on desktop by default */
+  display: none;
+  /* Hidden on desktop by default */
   background: none;
   border: none;
   color: var(--accent-color);
@@ -1095,6 +1159,7 @@ footer .container {
   padding: var(--space-xs);
   transition: color 0.3s ease, transform 0.3s ease;
 }
+
 .menu-toggle:hover {
   color: var(--text-color);
   transform: scale(1.1);
@@ -1120,11 +1185,13 @@ footer .container {
   pointer-events: none;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .sidebar-overlay.show {
   opacity: 1;
   transform: translateX(0);
   pointer-events: auto;
 }
+
 .sidebar-overlay .close-btn {
   position: absolute;
   top: var(--space-md);
@@ -1137,10 +1204,12 @@ footer .container {
   padding: var(--space-xs);
   transition: transform 0.3s ease, color 0.3s ease;
 }
+
 .sidebar-overlay .close-btn:hover {
   color: var(--text-color);
   transform: rotate(90deg);
 }
+
 .sidebar-overlay a {
   color: var(--text-color);
   text-decoration: none;
@@ -1151,12 +1220,14 @@ footer .container {
   border-radius: var(--radius-sm);
   transition: color 0.3s ease;
 }
+
 .sidebar-overlay a:hover {
   color: var(--accent-color);
 }
 
 /* --- Media Query: This is the switch from Desktop to Mobile view --- */
 @media (max-width: 768px) {
+
   /* Hide the desktop links */
   .nav-links.desktop {
     display: none;
@@ -1169,17 +1240,22 @@ footer .container {
 }
 
 .menu-toggle {
-  display: block; /* Changed from 'none' to always show the button */
+  display: block;
+  /* Changed from 'none' to always show the button */
   background: none;
   border: none;
-  color: var(--accent-color); /* This should be visible against your dark background */
-  font-size: 2rem; /* Made larger for better visibility */
+  color: var(--accent-color);
+  /* This should be visible against your dark background */
+  font-size: 2rem;
+  /* Made larger for better visibility */
   cursor: pointer;
   z-index: 1001;
   padding: var(--space-xs);
   transition: color 0.3s ease, transform 0.3s ease;
-  position: relative; /* Added for proper z-index handling */
-  margin-left: auto; /* This will push it to the right */
+  position: relative;
+  /* Added for proper z-index handling */
+  margin-left: auto;
+  /* This will push it to the right */
 }
 
 .menu-toggle:hover {
@@ -1190,17 +1266,20 @@ footer .container {
 /* Ensure mobile menu appears at the right breakpoint */
 @media (min-width: 769px) {
   .menu-toggle {
-    display: none; /* Hide on desktop */
+    display: none;
+    /* Hide on desktop */
   }
 }
 
 @media (max-width: 768px) {
   .nav-links.desktop {
-    display: none; /* Hide desktop menu on mobile */
+    display: none;
+    /* Hide desktop menu on mobile */
   }
-  
+
   .menu-toggle {
-    display: block; /* Show toggle on mobile */
+    display: block;
+    /* Show toggle on mobile */
   }
 }
 
@@ -1209,32 +1288,34 @@ footer .container {
 /* ========================================= */
 
 .nav-container {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: rgba(1, 4, 9, 0.85); 
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(94, 234, 212, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(1, 4, 9, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(94, 234, 212, 0.1);
 }
 
 .nav-container .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    max-width: 1200px;
-    margin: 0 auto; 
-    padding: var(--space-sm) var(--space-lg); /* Use global padding for consistency */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-sm) var(--space-lg);
+  /* Use global padding for consistency */
 }
 
 .profile-pic {
-  width: 65px; /* A good, balanced size */           
+  width: 65px;
+  /* A good, balanced size */
   height: 65px;
-  border-radius: 50%;       
+  border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--accent-color);
   box-shadow: 0 0 15px rgba(94, 234, 212, 0.3);
-  display: block;          
+  display: block;
 }
 
 .nav-links {
@@ -1282,15 +1363,19 @@ footer .container {
 
 /* --- Themed Toggle Button for ML/Data Portfolio --- */
 .menu-toggle {
-  display: none; /* CRITICAL: Hidden by default on large screens */
+  display: none;
+  /* CRITICAL: Hidden by default on large screens */
   background: transparent;
-  border: 2px solid transparent; /* Start with an invisible border */
-  border-radius: 50%; /* A clean circular shape */
+  border: 2px solid transparent;
+  /* Start with an invisible border */
+  border-radius: 50%;
+  /* A clean circular shape */
   color: var(--accent-color);
-  font-size: 1.5rem; /* Icon size */
+  font-size: 1.5rem;
+  /* Icon size */
   cursor: pointer;
   z-index: 1001;
-  
+
   /* Sizing and centering the icon */
   width: 45px;
   height: 45px;
@@ -1303,8 +1388,10 @@ footer .container {
 
 .menu-toggle:hover {
   color: var(--text-color);
-  border-color: var(--accent-color); /* Border appears on hover */
-  transform: scale(1.1) rotate(90deg); /* Nice interactive rotation */
+  border-color: var(--accent-color);
+  /* Border appears on hover */
+  transform: scale(1.1) rotate(90deg);
+  /* Nice interactive rotation */
 }
 
 /* --- Sidebar Overlay (The Dropdown Menu) --- */
@@ -1348,8 +1435,8 @@ footer .container {
 }
 
 .sidebar-overlay .close-btn:hover {
-    color: var(--text-color);
-    transform: rotate(180deg);
+  color: var(--text-color);
+  transform: rotate(180deg);
 }
 
 .sidebar-overlay a {
@@ -1369,6 +1456,7 @@ footer .container {
 
 /* --- Media Query: The switch from Desktop to Mobile view --- */
 @media (max-width: 768px) {
+
   /* Hide the regular text links */
   .nav-links.desktop {
     display: none;
@@ -1376,7 +1464,8 @@ footer .container {
 
   /* CRITICAL: Show the toggle button */
   .menu-toggle {
-    display: flex; /* Use flex to honor the centering properties */
+    display: flex;
+    /* Use flex to honor the centering properties */
   }
 
   /* Adjust padding for a tighter mobile header */
@@ -1391,7 +1480,8 @@ footer .container {
 .nav-links {
   display: flex;
   gap: var(--space-lg);
-  margin-left: auto; /* THIS IS THE FIX */
+  margin-left: auto;
+  /* THIS IS THE FIX */
 }
 
 /* src/App.css */
@@ -1466,10 +1556,12 @@ body {
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #333333;
   border-radius: var(--radius-pill);
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-color);
 }
@@ -1518,7 +1610,8 @@ nav .container {
 .nav-links {
   display: flex;
   gap: var(--space-lg);
-  margin-left: auto; /* Push links to the right */
+  margin-left: auto;
+  /* Push links to the right */
 }
 
 .nav-links a {
@@ -1642,7 +1735,10 @@ nav .container {
 .hero::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: radial-gradient(circle at 20% 30%, #222222, transparent 60%);
   z-index: -1;
 }
@@ -1698,8 +1794,10 @@ nav .container {
 .cta-button::before {
   content: '';
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: var(--accent-color);
   transform: scaleX(0);
   transform-origin: right;
@@ -1803,7 +1901,8 @@ section {
   margin-top: var(--space-sm);
   color: var(--subtext-color);
   font-size: clamp(0.9rem, 0.95vw, 0.95rem);
-  flex-grow: 1; /* Pushes links to the bottom */
+  flex-grow: 1;
+  /* Pushes links to the bottom */
 }
 
 .project-details li {
@@ -1859,9 +1958,11 @@ section {
   .big-heading {
     font-size: clamp(2.5rem, 6vw, 4rem);
   }
+
   .sub-heading {
     font-size: clamp(1.5rem, 3vw, 2rem);
   }
+
   .projects-grid {
     /* Go to 2 columns on tablets */
     grid-template-columns: repeat(2, 1fr);
@@ -1871,12 +1972,15 @@ section {
 /* For Mobile Landscape - Wide but not tall */
 @media (max-width: 920px) and (orientation: landscape) {
   .hero {
-    min-height: auto; /* Allow hero to shrink */
+    min-height: auto;
+    /* Allow hero to shrink */
     padding: var(--space-xl) 0;
   }
+
   .big-heading {
     font-size: 2.5rem;
   }
+
   .sub-heading {
     font-size: 1.5rem;
   }
@@ -1887,31 +1991,38 @@ section {
   .container {
     padding: 0 var(--space-md);
   }
-  
+
   /* --- Responsive Navigation --- */
   .nav-links.desktop {
     display: none;
   }
+
   .menu-toggle {
-    display: flex; /* Show hamburger menu */
+    display: flex;
+    /* Show hamburger menu */
   }
+
   .profile-pic {
     width: 50px;
     height: 50px;
   }
-  
+
   /* --- Responsive Typography & Layout --- */
   section {
     padding: var(--space-xl) 0;
   }
+
   .projects-grid,
-  .contact-info { /* Assuming you have a .contact-info grid */
+  .contact-info {
+    /* Assuming you have a .contact-info grid */
     /* Go to a single column layout */
     grid-template-columns: 1fr;
   }
+
   .big-heading {
     font-size: clamp(2.2rem, 10vw, 3rem);
   }
+
   .sub-heading {
     font-size: clamp(1.2rem, 5vw, 1.6rem);
   }
@@ -1934,10 +2045,11 @@ section {
   .big-heading {
     font-size: 2rem;
   }
+
   .sub-heading {
     font-size: 1.1rem;
   }
-  
+
   .section-heading {
     font-size: 1.5rem;
   }

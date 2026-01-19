@@ -1,8 +1,4 @@
 import React from 'react';
-
-// 1. IMPORT YOUR IMAGES
-// NOTE: Add your banking system screenshot to 'src/assets/projects/'
-// I have added a placeholder import for it below.
 import docuqueryImage from '../assets/projects/docuquery.png';
 import sdgsImage from '../assets/projects/sdgs.png';
 import ytImage from '../assets/projects/yt.png';
